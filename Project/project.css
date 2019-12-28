@@ -1,0 +1,1221 @@
+body {
+			
+			/*background-image: url(background16.jpeg);*/
+			background-color: #1a1a1a;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			font-family: 'Roboto Condensed', sans-serif;
+			
+
+		}
+		.top {
+			/*background-image: url(background14.jpg);*/
+			background-color: #1a1a1a;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 200px;
+			position: relative;
+			border-top: 2px solid black;
+			border-bottom: 2px solid grey;
+			border-top: 2px solid grey ;
+			
+		}
+		.logo {
+			float: left;
+			margin-left: 150px;
+			margin-top: 20px;		
+	
+			padding-top: 2px;
+			box-sizing: border-box;
+			height: 150px;	
+			width: 2px;	
+			transition: width 0.5s;	
+			text-align: center;
+
+		}
+		.logo img {
+			
+			width: 300px;
+			height: 140px;
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.5);	
+		}
+		.logo:hover {
+			width: 300px;
+			height: 150px;
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+			cursor: pointer;
+		}
+		.search {
+			text-align: center;
+			margin: auto;
+			clear: both;
+			width: 300px;			
+			position: relative;
+			top: -105px;
+
+		}
+		
+		.search input {
+			text-align: center;
+			height: 40px;
+			width: 300px;
+			background-color: black;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+			border-right: 0px;
+			border-left: 0px;
+			color: white;
+		
+			outline: none;
+			
+		}
+		
+		.search i {
+			position: absolute;
+			top: 12px;
+			color: #660000;
+			right: 10px;
+			font-size: 20px;
+			transition: all 1s;
+		}
+		.button {
+			float: right;
+		
+			position: absolute;
+			top: 50px;
+			right: 100px;
+		}
+		.button input {
+			height: 50px;
+			border: 1px solid white ;
+			background-color: #1a1a1a;
+			outline: none;
+			color:  grey;
+			font-weight: bold;
+			border-right: 0px;
+			border-left: 0px;
+		
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.5);			
+		}
+		.button input:hover {
+			color: white;
+			cursor: pointer;
+		}
+
+		.fb {
+			background-image: url(facebook.png);
+			background-repeat: no-repeat;	
+			background-position: 5px;
+		}
+		.menu {
+			width: 100%;
+			height: 50px;
+			background-color: #333333;
+			float: left;
+			padding-bottom: 20PX;
+			box-sizing: border-box;
+			text-align: right;
+			padding-left: 200px;
+			color: white;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;		
+			
+			
+		}
+		.menu ul {
+			list-style-type: none;
+			background-color: red;
+			
+		}
+		.menu li {
+			float: left;
+			width: auto;
+			margin-right: 0px;
+			height: 35px;
+			position: relative;
+			top: -16px;
+			text-align: center;
+			padding-top: 15px;
+			
+
+		}
+		.body {
+			width: 100%;
+			height: 3400px;
+			position: relative;
+			float: left;
+			
+		}
+		.hello {
+			color: white;
+			background-color: black;
+			width: 80%;
+			height: 50px;
+			margin: auto;
+			text-align: center;
+			margin-top: 20px;
+			padding-top: 13px;
+			box-sizing: border-box;
+			border: 1px solid grey;
+			margin-bottom: 10px;
+		}
+		.twd {
+			
+			background-image: url(twd.jpg);			
+			width: 80%;
+			height: 150px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: auto;
+			margin-bottom: 10px;
+
+		}
+		.menu li div {
+			
+			position: relative;
+			z-index: 2;
+			width: 0px;
+			height: 0px;
+			top: 16.5px;						
+			color: white;
+			text-align: left;
+			opacity: 0;
+			box-sizing: border-box;
+			font-weight: normal;
+			border: 1px solid #800000;
+			transition: all 0.2s;
+			background-color: black;
+			
+
+		}
+		.menu li:hover {
+			cursor: pointer;
+			color: #800000;
+			background-color: black;
+		}
+		
+		
+		.menu li:hover table {
+			visibility: visible;
+		}
+		.theloai table {
+			visibility: hidden;
+			padding-top: 20px;
+			padding-left: 20px;
+			background-color: black;
+			width: 899px;
+			height: 200px;
+			
+		}
+		.quocgia table {
+			visibility: hidden;
+			padding-top: 20px;
+			padding-left: 20px;
+			background-color: black;
+			width: 499px;
+			height: 200px;
+		}
+		.menu li:hover .theloai {
+			opacity: 1;			
+			cursor: pointer;
+			width: 900px;
+			height: 220px;
+			
+		}
+		.menu li:hover .quocgia {
+			opacity: 1;			
+			cursor: pointer;
+			width: 500px;
+			height: 220px;
+			
+		}
+		.menu td:hover {
+			background-color: #333333;
+		}
+		.menu td {
+			padding-left: 10px;
+		}
+		.phimle table {
+			visibility: hidden;
+			padding-top: 20px;
+			padding-left: 20px;
+			background-color: black;
+			width: 599px;
+			height: 100px;
+		}
+		.menu li:hover .phimle {
+			opacity: 1;			
+			cursor: pointer;
+			width: 600px;
+			height: 120px;
+			
+		}
+		.phimbo table {
+			visibility: hidden;
+			padding-top: 20px;
+			padding-left: 20px;
+			background-color: black;
+			width: 599px;
+			height: 100px;
+		}
+		.menu li:hover .phimbo {
+			opacity: 1;			
+			cursor: pointer;
+			width: 600px;
+			height: 120px;
+			
+		}
+		.gif {
+			
+			width: 23%;
+			height: 695px;
+			float: left;
+			margin-left: 10%;
+			
+			background-color: black;
+			margin-right: 10px;
+			margin-right: 30px;
+		}
+		.gif img {
+			width: 100%;
+			height: 495px;
+		}
+		.box {
+			width: 30%;
+			height: 50px;
+			color: white;
+			background-color: #333333;
+			text-decoration: none;
+			float: left;
+			border-bottom: 2px double grey;
+			box-sizing: border-box;
+			font-size: 20px;
+			
+
+
+		}
+		.iframe {
+			width: 30%;
+			float: left;
+			background-color: black ;
+
+		}
+
+		.star {
+			width: 23%;
+			float: right;
+			
+			height: 600px;
+			margin-right: 10%;
+		}
+		.box ul {
+			list-style-type: none;
+			padding-left: 0px;
+			width: 100%;
+		}
+		.box li {
+			float: left;
+			width: 33.333%;
+			height: 50px;
+			padding-top: 13px;
+			color: white;
+			position: relative;
+			top: -20px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.box a {
+			color:white;
+		}
+	
+		.before {
+			
+			transition: all 0.5s;
+		}
+		.after {
+			border: 1px solid black;
+			background-color: black; border-bottom: 2px solid #800000;
+		}
+		
+		.trailerphimoi {
+			text-align: left;
+			font-size: 25px;
+			color: #d9d9d9 ;
+			font-weight: bold;
+			background-color: black;
+	
+			
+			
+			padding-left: 10px;
+			box-sizing: border-box;
+			height: 60px;
+			padding-top: 3px;
+			margin-bottom: 10px;
+
+
+		}
+		.trailerphimoi:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+		.star iframe {
+			background-color: black;
+			border: 1px solid grey;
+			border-radius: 10px;
+		}
+		.phimchieurap {
+			
+			width: 55%;
+			height: 50px;
+			float: left;
+			margin-left: 10%;
+			margin-top: 20px;
+			font-size: 30px;
+			color: white;
+			background-color: black;
+			box-sizing: border-box;
+			padding-top: 8px;
+			padding-left: 10px;
+			font-weight: bold;
+			position: relative;
+			border-bottom: 2px solid #800000;
+		}
+		.phimchieurap i {
+			color: grey;
+		}
+		.phimchieurap span {
+			position: absolute;
+			right: 10px;
+			font-size: 15px;
+			bottom: 10px;
+			color: grey;
+		}
+		.phimchieurap span:hover {
+			color: white ;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.phimchieurap span:hover i {
+			color: white ;
+		}
+		.phimchieurap:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.hinhchieurap {
+			width: 55%;
+			height: 630px;
+			float: left;
+			margin-left: 10%;
+			
+		}
+		.hinhrap {
+			width: 23.5%;
+			float: left;
+			height: 300px;
+			position: relative;
+			margin-right: 8.2px;
+			margin-top: 10px;
+			border: 1px solid grey;
+		}
+		.hinhrap:hover  {
+			border: 1px solid white;
+			cursor: pointer;
+		}
+		.hinhrap:hover .detail {
+			transform: translateX(12px);
+		}
+		.hinhrap:hover .viet {
+			color: #800000;
+		}
+		.hinhrap img {
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s;
+		}
+		.detail {
+			position: absolute;
+			background-color: #800000;
+			padding-right: 13px;
+			top: 20px;
+			padding-left: 5px;
+			height: 25px;
+			padding-top: 3px;
+			box-sizing: border-box;
+			color: white;
+			font-size: 15px;
+			transition: all 0.5s;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+		}
+		.detail i {
+			transform: rotate(45deg);
+			position: absolute;
+			top: 4px;
+			right: -8px;
+			color: #800000;
+			
+			font-size: 18px;
+		}
+		.tenphim {
+			position: absolute; 
+			background-color: black;
+			height: 70px;
+			width: 100%;
+			bottom: 0px;
+
+		}
+		.tenphim span {
+			width: 100%;
+			display: inline-block;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+		.viet {
+			color: white;
+			font-weight: bold;
+		}
+		.english {
+			color: white;
+			font-size: 15px;
+		}
+		.time {
+			color: grey;
+			font-size: 10px;
+		}
+		.gifhh {
+			
+		
+			
+			float: left;
+			width: 55%;
+			height: 150px;
+			margin-left: 10%;
+		}
+		.gifhh img {
+			height: 150px;
+			width: 100%;
+		}
+
+		
+
+			
+
+	#phimdecu {
+		overflow: hidden;
+		margin-left: 10%;
+		height: 540px;
+		width: 80%;
+		background-color: black;
+		margin-bottom: 20px;
+		border-top: 2px solid grey;
+		border-bottom: 2px solid grey;
+		position: relative;
+
+		
+	}
+	#trong {
+		float: left;
+		width: 100000px;
+		background-color: black;
+		transition: all 0.5s;
+		
+		border-left: none;
+		border-bottom: none;
+
+	}
+	#trong div {
+
+		border: 1px solid black;
+		height: 500px;
+		float: left;
+		width: 1203px;
+		background-color: black;
+		position: relative;
+		
+		box-sizing: border-box;
+		padding-left: 20px;
+
+		
+	}
+	#trong div img {
+		width: 750px;
+		height: 450px;
+		position: absolute;
+		top: 20PX;
+		right: 20px;
+		border-radius: 10px;
+
+	}
+	#ten {
+		padding-top: 50px;
+		display: inline-block;
+		color: white;
+		font-weight: bold;
+		font-size: 60px;
+		width: 250px;
+		padding-left: 20px;
+
+		
+	}
+	#season {
+		color: white;
+		font-size: 20px;
+		font-weight: normal;
+
+	}
+	#watch {
+		
+		text-align: center;
+		font-weight: bold;
+		padding-top: 14px;
+		box-sizing: border-box;
+		background-color: #800000;
+		display: inline-block;
+		position: absolute;
+		bottom: 50px;
+		left: 100px;
+		width: 200px;
+		height: 50px;
+		transition: all 0.5s;
+	}
+	#watch:hover {
+		cursor: pointer;
+		border: 1px solid white;
+	}
+	#but input {
+		border-radius: 100%;
+		border: none;
+		margin-right: 20px;
+		outline: none;
+		font-size: 10px;
+		box-sizing: border-box;
+	}
+	#but {
+		box-sizing: border-box;
+		position: relative;
+		left: 730px;
+		bottom: 10px
+	}
+	#but input:hover {
+		cursor: pointer;
+		opacity: 0.5;
+
+	}
+	.end {
+		width: 100%;
+		color: white;
+		height: 300px;
+		position: absolute;
+		bottom: 0px;
+		background-color: black;
+		border-top: 2px solid grey;
+
+	}
+	.logoend {
+		float: left;
+		width: 30%;
+		
+		height: 300px;
+		box-sizing: border-box;
+		padding-left: 80px;
+		padding-top: 60px;
+	}
+	.logoend img {
+		width: 300px;
+		height: 150px;
+		transition: all 0.5s;
+
+	}
+	.logoend img:hover {
+		border-top: 1px solid white ;
+		border-bottom: 1px solid white ;
+		cursor: pointer;
+	}
+	.tableend {
+		box-sizing: border-box;
+		float: left;
+		width: 40%;
+
+		padding-top: 50px;
+		padding-left: 20px;
+		height: 300px;
+	}
+	.tableend table {
+		width: 100%;
+		height: 200px;
+		
+
+	}
+	.quangcao {
+		float: left;
+		width: 25%;
+	
+		height: 300px;
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+	.kindfilm {
+		color: #800000;
+		font-size: 30px;
+		font-weight: bold;
+		height: 80px;
+	}
+	.quangcao i {
+		color: grey;
+		float: left;
+		font-size: 50px;
+		margin: 30px;
+		transition: all 0.5s;
+
+	}
+	.quangcao i:hover {
+		color: white ;
+		font-size: 65px;
+		cursor: pointer;
+	}
+	.tableend td:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.tieude {
+		float: left;
+		width: 80%;
+		height: 50px;
+		background-color: black;
+		margin-left: 10%;
+		padding-top: 15px;
+		box-sizing: border-box;
+		padding-left: 20px;
+		color: grey;
+		margin-bottom: 10px;
+	}
+	.tieude span {
+		color: #800000;
+	}
+	.tieude span:hover {
+		text-decoration: underline;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.gioithieuphim {
+		height: 2290px;
+		width: 55%;
+		background-color: black;
+		float: left;
+		margin-left: 10%;
+		position: relative;
+		
+	}
+	.hinhtwd {
+		margin-top: 15px;
+		margin-left: 15px;
+		background-color: green;
+		width: 45%;
+		height: 500px;
+		position: relative;
+		float: left;
+		margin-right: 20px;
+
+	}
+	.hinhtwd img {
+		height: 500px;
+		width: 100%;
+	}
+	.danhdau {
+		border-radius: 10px;
+		padding-top: 4px;
+		padding-left: 8px;
+		width: 100px;
+		box-sizing: border-box;
+		height: 30px;
+		position: absolute;
+		color: white ;
+		background-color: black;
+		opacity: 0.7;
+		top: 20px;
+		left: 10px;
+	}
+	.danhdau i {
+		opacity: 0.7;
+	}
+	.danhdau:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	.danhdau:hover i {
+		color: #800000;
+		opacity: 1;
+	}
+	.bamau {
+		opacity: 1;
+		color: white ;
+		position: absolute;
+		bottom: 0px;
+		background-color: black;
+		
+		width: 100%;
+		height: 80px;
+		padding-top: 15px;
+		box-sizing: border-box;
+	}
+	.bamau div {
+		opacity: 0.7;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 13px;
+		box-sizing: border-box;
+		margin-right: 8px;
+		border-radius: 10px;
+	}
+	.bamau div:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	.xanhla {
+		height: 50px;
+		margin-left: 10px;
+		float: left;
+		background-color:  #00cc66;
+		width: 30%;
+	}
+	.xanhduong {
+		height: 50px;
+		float: left;
+		width: 30%;
+		background-color: #3399ff;
+	}
+	.do {
+		height: 50px;
+		float: left;
+		width: 30%;
+		background-color: #ff4d4d;
+	}
+	.xacsong9 {
+		
+		color: white ;
+		
+		width: 40%;
+		height: 80px;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 20px;
+		margin-bottom: 10px;
+	}
+	.xacsong9 div {
+		font-size: 30px;
+		color: #800000;
+		transition: all 0.5s;
+	}
+	.xacsong9 div:hover {
+		font-weight: bold;
+		cursor: pointer;
+		transform: translateX(10px);
+	}
+	.frametwd {
+		background-color:  #1a1a1a ;
+		float: left;
+		width: 50%;
+
+	}
+	.danhgia {
+		padding-left: 10px;
+		box-sizing: border-box;
+		padding-top: 10px;
+		margin-top: 20px;
+		background-color: #1a1a1a;
+		float: left;
+		width: 50%;
+		height: 100px;
+		position: relative;
+	}
+	.chudanhgia {
+		color:  #e6b800;
+		font-size: 30px;
+		width: 200px;
+		
+		float: left;
+	}
+	.luot {
+		padding-top: 10px;
+		color: grey;
+	}
+	.like {
+		position: absolute;
+		top: 10px;
+		background-color: #24478f;
+		color: white;
+		width: 70px;
+		text-align: center;
+		height: 30px;
+		box-sizing: border-box;
+		padding-top: 5px;
+		border-radius: 8px;
+		right: 10px;
+		opacity: 0.7;
+
+	}
+	.like i {
+		transition: all 0.5s;
+	}
+	.like:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	.like:hover i {
+		transform: rotate(360deg);
+	}
+	.sao {
+		position: absolute;
+		bottom: 10px;
+		font-size: 20px;
+		color: grey;
+	}
+	.sao i {
+		margin: 5px;
+	}
+	.sao i:hover {
+		color: #e6b800;
+		cursor: pointer;
+	}
+	.tapmoi {
+		margin-top: 20px;
+		float: left;
+		width: 98%;
+		color: white ;
+		background-color: #1a1a1a;
+		padding:10px;
+		margin: 10px;
+		box-sizing: border-box;
+		position: relative;
+
+	}
+	.chutren {
+		font-size: 25px;
+		font-weight: bold;
+		height: 50px;
+		border-bottom: 1px solid white ;
+	}
+	.chuduoi {
+		margin-top: 25px;
+		height: 30px;
+	}
+	.dangki {
+		position: absolute;
+		right: 20px;
+		bottom: 15px;
+		background-color: #ff4d4d;
+		height: 35px;
+		box-sizing: border-box;
+		padding-top: 7px;
+		width: 110px;
+		text-align: center;
+		border-radius: 10px;
+		opacity: 0.7;
+	}
+	.dangki i {
+		transition: all 0.5s;
+	}
+	.dangki:hover {
+		cursor: pointer;
+		opacity: 1;
+	}
+	.dangki:hover i {
+		transform: rotate(360deg);
+	}
+	.dienvientwd {
+		margin-top: 20px;
+		float: left;
+		width: 98%;
+		height: 300px;
+		background-color: #1a1a1a;
+		padding:10px;
+
+		margin: 10px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 8px;
+	}
+	.chudienvienmau {
+		color: #800000;
+		font-size: 30px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.listdienvien {
+		border: 1px solid grey;
+		color: white ;
+		float: left;
+		width: 120px;
+		height: 200px;
+		margin-right: 10px;
+
+	}
+	.listdienvien:hover {
+		cursor: pointer;
+		border: 1px solid white ;
+	}
+	.listdienvien:hover img {
+		opacity: 0.7;
+	}
+	.listdienvien:hover .name {
+		color:  #00ccff;
+	}
+	.listdienvien img {
+		width: 100%;
+		height: 150px;
+	}
+	.name {
+		font-weight: bold;
+	}
+	.kenoidung {
+		margin-top: 20px;
+		float: left;
+		width: 98%;
+		height: 730px;
+		background-color: #1a1a1a;
+		padding:10px;
+		color: white ;
+		margin: 10px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 8px;
+	}
+	.noidungphim {
+		color: #800000;
+		font-weight: bold;font-size: 30px;
+	}
+	.kenoidung span {
+		font-weight: bold;
+	}
+	.kenoidung img {
+		margin-left: 10px;
+		width: 98%;
+		height: 500px;
+	}
+	.video {
+		margin-top: 20px;
+		float: left;
+		width: 98%;
+		height: 530px;
+		background-color: #1a1a1a;
+		padding:10px;
+		color: white ;
+		margin: 10px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 8px;
+	}
+	.video div {
+		color: #800000;
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.khungdangky {
+		height: 1120px;
+		width: 54%;
+		background-color: black;
+		float: left;
+		margin-left: 10%;
+		position: relative;
+		color:white;
+		padding-left: 30px;
+		padding-top: 50px;
+		border-radius: 10px;
+	}
+	.khungdangky input {
+		margin-left: 20px;
+		height: 50px;
+		width: 500px;
+		color: white ;
+		font-size: 20px;
+		border-radius: 10px;
+		background-color: #1a1a1a;
+		outline: none;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		font-family: 'Roboto Condensed', sans-serif;
+		transition: all 0.5s;
+	}
+	
+	.khungdangky div {
+	
+		padding-top: 15px;
+		text-align: right;
+		width: 200px;
+		float: left;
+		font-size: 20px;
+	}
+	.truoc {
+		border: 1px solid black;
+	}
+	.sau  {
+	 border: 1px solid #800000;
+		
+	}
+	.khungdangky select {
+		outline: none;
+		width: 100px;
+		margin-left: 20px;
+		height: 50px;
+		background-color:  #1a1a1a;
+		color: white;
+		font-size: 20px;
+		font-family: 'Roboto Condensed', sans-serif;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		transition: all 0.5s;
+	}
+	.khungdangky img {
+		padding-top: 10px;
+		padding-left: 220px;
+		margin-bottom: 10px;
+	}
+	.summit {
+		border: 1px solid black;
+
+	}
+	.summit:hover {
+		border: 1px solid white ;
+		cursor: pointer;
+	}
+	.fb:hover {
+		cursor: pointer;
+		opacity: 0.7;
+	}
+	.quenmk:hover {
+		cursor: pointer;
+		border: 1px solid red;
+	}
+	.search i:hover {
+		cursor: pointer;
+		transform: rotateY(360deg);
+	}
+	.khungdangky span {
+		opacity: 0;
+		font-weight: bold;
+		color: #800000;
+
+	}
+	.xem {
+		position: relative;
+		width: 200px;
+		height: 250px;
+		float: left;
+		margin:15px;
+		margin-right: 30px;
+	}
+	.xem img {
+		width: 100%;
+		height: 100%;
+	}
+	.xemtrailer {
+		opacity: 0.7;
+		padding-top: 10px;
+		box-sizing: border-box;
+		text-align: center;
+		color:  #00ccff;
+		font-size: 20px;
+		background-color: black;
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		bottom: 0px;
+	}
+	.noidungngan {
+		padding: 10px;
+
+		box-sizing: border-box;
+		color: grey;
+		background-color: #1a1a1a;
+		width: 550px;
+		height: 150px;
+		float: left;
+	}
+	.noidungngan span {
+		color:  #00ccff;
+
+	}
+	.the {
+		width: 100%
+		height: 100px;
+	}
+	.the img {
+		height: 150px;
+		width: 100%;
+	}
+	.chontap {
+		font-size: 20px;
+		float: left;
+		padding-left: 20px;
+		padding-top: 20px;
+		margin: 20px;
+		color: white ;
+		width: 93%;
+		margin-left: 20px;
+		border-top: 1px dashed grey;
+		padding-right: 0px;
+		
+	}
+	.chontap input {
+		margin-top: 10px;
+		margin-left: 5px;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+	
+		
+		color: grey;
+		border-radius: 10px;
+		outline: none;
+
+	}
+	.tool {
+		float: left;
+		height: 50px;
+		color: white ;
+		margin-left: 20px;
+	}
+	.tool i {
+		font-size: 20px;
+		transition: all 1s;
+	}
+	.tool span {
+		margin-left: 40px;
+		padding-top: 5px;
+		box-sizing: border-box;
+		border: 1px solid grey;
+		display: inline-block;
+		height: 40px;
+
+	}
+	.xemtrailer:hover {
+		cursor: pointer;
+		opacity: 1;
+		color: #800000;
+	}
+	.tool span:hover {
+		cursor: pointer;
+	}
+	.tool span:hover i {
+		transform: rotateY(360deg);
+		color: #800000;
+	}
+	.chontap input:hover {
+		cursor: pointer;
+		border: 1px solid #800000;
+
+	}
+	.tr {
+			background-color: #1a1a1a;
+			border: none;
+	}
+	.s {
+		border: 1px solid #800000;
+		background-color: #1a1a1a;
+	}

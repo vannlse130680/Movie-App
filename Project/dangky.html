@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Fjalla+One|Francois+One|Pacifico|Roboto+Condensed|Rosario|Teko|Vollkorn" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<title></title>
+	<script type="text/javascript">
+		function hightlight(id) {
+			var a=document.getElementsByClassName("sau") // lấy tất cả các thẻ có class là after trẻ về là một aray 
+			for (i=0;i<a.length;i++)
+				a[i].setAttribute("class","truoc");
+			id.setAttribute("class","sau");
+		}
+		function thongbao() {
+			var taikhoan = document.f.t1;
+			var s1 = document.getElementById("sao1");
+
+			if (taikhoan.value.length == 0) {
+				s1.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập tài khoản");
+
+			} else s1.style.opacity = 0;
+			var mk = document.f.t2;
+			var s2 = document.getElementById("sao2");
+			var nhaplaimk = document.f.t3;
+			var s3 = document.getElementById("sao3");
+			if (mk.value.length == 0) {
+				s2.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập mật khẩu");
+
+			} else 
+				
+			if (mk.value.length < 6) {
+				s2.style.opacity = 1;
+				s2.style.color = "#800000";
+				window.alert("Mật khẩu chứa tổi thiểu 6 kí tự");
+
+			} else s2.style.opacity = 0;
+			
+			if (nhaplaimk.value.length == 0) {
+				s3.style.opacity = 1;
+				
+				window.alert("Bạn cần xác nhận lại mật khẩu");
+
+			} else 
+			if (nhaplaimk.value != mk.value) {
+				s3.style.opacity = 1;
+				
+				window.alert("Mật khẩu nhập lại phải khớp với mật khẩu đã nhập");
+
+			} else s3.style.opacity = 0;
+			var hoten = document.f.t4;
+			var s4 = document.getElementById("sao4");
+			if (hoten.value.length == 0) {
+				s4.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập họ tên");
+
+			} else s4.style.opacity = 0;
+			var mau = /^[a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/;
+			var email = document.f.t5;
+			var s5 = document.getElementById("sao5");
+			if (email.value.length == 0) {
+				s5.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập email");
+
+			} else 
+			if (mau.test(email.value)==false) {
+				s5.style.opacity = 1;
+				
+				window.alert("Email không hợp lệ!");
+			} else s5.style.opacity = 0;
+			var mau1 = /^[0-9]{10}$/;
+			var sdt = document.f.t6;
+			var s6 = document.getElementById("sao6");
+			if (sdt.value.length == 0) {
+				s6.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập số điện thoại");
+
+			} else 
+			if (mau1.test(sdt.value)==false) {
+				s6.style.opacity = 1;
+				
+				window.alert("Số điện thoại không hợp lệ");
+			} else s6.style.opacity = 0;
+			var s7 = document.getElementById("sao7");
+			var ngaysinh = document.f.t7;
+			var thangsinh = document.f.t8;
+			var namsinh = document.f.t9;
+			var i = ngaysinh.selectedIndex;
+			var ii = thangsinh.selectedIndex;
+			var iii = namsinh.selectedIndex;
+			if (i==0)  {
+				s7.style.opacity = 1;
+				window.alert("Bạn chưa nhập ngày sinh");
+			} else s7.style.opacity = 0; 
+			if (ii==0)  {
+				s7.style.opacity = 1;
+				window.alert("Bạn chưa nhập tháng sinh");
+			} else s7.style.opacity = 0;
+			if (iii==0)  {
+				s7.style.opacity = 1;
+				window.alert("Bạn chưa nhập năm sinh");
+			} else s7.style.opacity = 0;
+			var s8 = document.getElementById("sao8");
+			var maxn = document.f.t10;
+			if (maxn.value.length == 0) {
+				s8.style.opacity = 1;
+				window.alert("Bạn chưa nhập mã xác nhận");
+
+			} else 
+			if (maxn.value != 6526) {
+				s8.style.opacity = 1;
+				window.alert("Mã xác nhận ko hợp lệ");
+
+			} else s8.style.opacity = 0;
+
+			
+		
+		}
+		var bien;
+		function backtotop(){
+			var y = window.pageYOffset; // lay toa do thanh cuon doc hien hanh
+			y = y -100;
+			if (y<=0) {
+				window.clearInterval(bien);
+			}
+			window.scrollTo(0, y);
+		}
+		function hengio() {
+			bien = window.setInterval(backtotop, 10);
+		}
+	</script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="logo"><a href="luyentap.html"><img src="logo1.jpg"></div></a>
+		<div class="search"><input type="text" placeholder="Search for ....">
+		<i class="fas fa-search"></i>
+		</div>
+		<div class="button">
+			<a href="dangky.html"><input type="button" value="Đăng kí"></a>
+			<a href="dangnhap.html"><input type="button" value="Đăng nhập" style="margin-left: 5px;"></a>
+			<input type="button" value="         Đăng nhập bằng FaceBook" style="margin-left: 20px; background-color: #2e5cb8" class="fb">
+			
+		</div>
+	</div>
+	<div class="menu"> 
+		<ul>
+			<a href="luyentap.html" style="color: white ;"><li style="width: 100px; ">PHIM MỚI</li></a>
+			<li style="width: 100px; ">THỂ LOẠI
+				<div class="theloai">
+					<table>
+						<tr>
+							<td>Phim hành động</td>
+							<td>Phim viễn tưởng</td>
+							<td>Phim chiến tranh</td>
+							<td>Phim hình sự</td>
+							<td>Phim phiêu lưu</td>
+						</tr>
+						<tr>
+							<td>Phim hài hước</td>
+							<td>Phim võ thuật</td>
+							<td>Phim kinh dị</td>
+							<td>Phim hồi hợp - gây cấn</td>
+							<td>Phim bí ẩn - siêu nhiên</td>
+						</tr>
+						<tr>
+							<td>Phim cổ trang</td>
+							<td>Phim thần thoại</td>
+							<td>Phim tâm lí</td>
+							<td>Phim tài liệu</td>
+							<td>Phim tình cảm</td>
+						</tr>
+						<tr>
+							<td>Phim chính kịch</td>
+							<td>Phim thể thao</td>
+							<td>Phim gia đình</td>
+							<td ><a href="phimhoathinh.html" style="color: white ; text-decoration: none;">Phim hoạt hình</a> </td>
+							
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li style="width: 100px; ">QUỐC GIA
+				<div class="quocgia">
+					<table>
+						<tr>
+							<td>Việt Nam</td>
+							<td>Trung Quốc</td>
+							<td>Mĩ</td>
+							<td>Hàn Quốc</td>
+							
+						</tr>
+						<tr>
+							<td>Nhật Bản</td>
+							<td>Hồng Kong</td>
+							<td>Ấn Độ</td>
+							<td>Thái Lan</td>							
+						</tr>
+						<tr>
+							<td>Pháp</td>
+							<td>Đài Loan</td>
+							<td>Úc</td>
+							<td>Anh</td>
+							
+						</tr>
+						<tr>
+							<td>Canada</td>							
+							<td>Quốc gia khác</td>
+
+						</tr>
+
+					</table>
+				</div>
+			</li>
+			<li style="width: 100px; ">PHIM LẺ
+				<div class="phimle">
+					<table>
+					<tr>
+						<td>Phim lẻ 2018</td>
+						<td>Phim lẻ 2017</td>
+						<td>Phim lẻ 2016</td>
+						<td>Phim lẻ 2015</td>
+					</tr>
+					<tr>
+							<td>Phim lẻ 2014</td>
+							<td>Phim lẻ 2013</td>
+							<td>Phim lẻ 2012</td>
+							<td>Phim lẻ trước 2012</td>
+					</tr>
+					</table>		
+				</div>
+			</li>
+			<li style="width: 100px; ">PHIM BỘ
+				<div class="phimbo">
+					<table>
+						<tr>
+							<td>Phim bộ Hàn Quốc</td>
+							<td>Phim bộ Trung Quốc</td>
+							<td>Phim bộ Thái Lan</td>
+						</tr>
+						<tr>
+							<td>Phim bộ Hồng Kong</td>
+							<td>Phim bộ Đài Loan</td>
+							<td>Phim bộ Mỹ</td>
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li style="width: 180px; ">PHIM THUYẾT MINH</li>
+			<li style="width: 170px; ">PHIM CHIẾU RẠP</li>
+			<li style="width: 100px; ">TRAILER</li>
+			<li style="width: 150px; ">TOP IMDB 2017</li>
+		</ul>
+	</div>
+	<div class="body" style="height: 1800px;">
+		<div class="hello">Chào mừng các bạn đến với Vans Film. Chúc các bạn có những giay phút xem phim thật thoải mái và thú vị</div>
+		<div class="twd"></div>
+		<div class="tieude"><span>PHIM MỚI</span>  / ĐĂNG KÝ TÀI KHOẢN</div>
+		<div class="khungdangky">
+			<form name="f">
+				<div>Tài khoản<span id="sao1">*</span></div><input type="text" name="t1" onclick="hightlight(this)"  class="truoc" > <br>
+				<div>Mật khẩu<span id="sao2">*</span></div><input type="password" name="t2" onclick="hightlight(this)" class="truoc"> <br>
+				<div>Xác nhận mật khẩu<span id="sao3">*</span></div><input type="password" name="t3" onclick="hightlight(this)" class="truoc"> <br>
+				<div>Họ tên<span id="sao4">*</span></div><input type="text" name="t4" onclick="hightlight(this)" class="truoc"> <br>
+				<div>Email<span id="sao5">*</span></div><input type="email" name="t5" onclick="hightlight(this)" class="truoc"> <br>
+				<div>Số điện thoại<span id="sao6">*</span></div><input type="text" name="t6" onclick="hightlight(this)" class="truoc"> <br>
+				<div>Ngày sinh<span id="sao7">*</span></div><select class="truoc" onclick="hightlight(this)" name="t7">
+											<script type="text/javascript">
+												document.write("<option>Ngày</option>");
+												for(var i=1;i<31;i++)
+												document.write("<option>" + i + "</option>");
+											</script>
+
+										</select>
+										<select class="truoc" onclick="hightlight(this)" name="t8">
+											<script type="text/javascript">
+												document.write("<option>Tháng</option>");
+												for(var i=1;i<=12;i++)
+												document.write("<option>" + i + "</option>");
+											</script>
+										</select>
+										<select class="truoc" onclick="hightlight(this)" name="t9">
+											<script type="text/javascript">
+												document.write("<option>Năm</option>");
+												for(var i=1919;i<=2018;i++)
+												document.write("<option>" + i + "</option>");
+											</script>
+										</select><br>
+				<div style="padding-top: 10px;">Giới tính</div><input type="radio" checked="checked" name="sex" style="width: 50px; height: 20px; padding-top: 10px; box-sizing: border-box;" >Nam  <input type="radio"  name="sex"  style="width: 50px; height: 20px;" align="top">Nữ <br>
+				<img src="ma.png"> <br>
+				<div>Mã xác nhận<span id="sao8">*</span></div><input type="text" name="t10" onclick="hightlight(this)" class="truoc" placeholder="Nhập mã xác nhận" style="width: 200px;"> <br>
+				<div></div><input type="summit" name="" value="Đăng ký" style="width: 100px; background-color: #800000; text-align: center; padding-left: 0px; " class="summit" onclick="thongbao()">
+			</form>
+
+		</div>
+		<div class="star">
+			<div class="trailerphimoi"><i class="fab fa-hotjar" style="font-size: 40px; color: #800000"></i> TRAILER PHIM MỚI</div>
+			<iframe  height="500px" width="100%;" frameborder="0	" src="trailer.html"> </iframe>
+		</div>
+		<div class="star">
+			<div class="trailerphimoi"><i class="fab fa-hotjar" style="font-size: 40px; color: #800000"></i> PHIM LẺ HOT</div>
+			<iframe  height="500px" width="100%;" frameborder="0	" src="phimlehot.html"> </iframe>
+		</div>
+		<div class="end">
+			<div class="logoend"><img src="logo1.jpg" onclick="hengio()"></div>
+			<div class="tableend"><table>
+				<tr class="kindfilm">
+					<td>Phim Mới</td>
+					<td>Phim Lẻ</td>
+					<td>Phim Bộ</td>
+				</tr>
+				<tr>
+					<td>Phim lẻ mới</td>
+					<td>Phim hành động</td>
+					<td>Phim bộ Hàn Quốc</td>
+
+				</tr>
+				<tr>
+					<td>Phim bộ mới</td>
+					<td>Phim kiếm hiệp</td>
+					<td>Phim bộ Trung Quốc</td>
+
+				</tr>
+				<tr>
+					<td>Phim chiếu rạp</td>
+					<td>Phim kinh dị</td>
+					<td>Phim bộ Mỹ</td>
+				</tr>
+				<tr>
+					<td>Phim kinh điển</td>
+					<td>Phim viễn tưởng</td>
+					<td>Phim bộ Việt Nam</td>
+				</tr>
+			</table></div>
+			<div class="quangcao">
+				<div style="font-weight: bold; font-size: 25px;">Liên hệ quảng cáo </div>
+				<div style="font-style: italic;">Email: nguyenlamvan1999@gmail.com</div>
+				<div><i class="fab fa-facebook"></i></div>
+				<div><i class="fab fa-instagram"></i></div>
+				<div><i class="fab fa-twitter-square"></i></div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

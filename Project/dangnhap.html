@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Fjalla+One|Francois+One|Pacifico|Roboto+Condensed|Rosario|Teko|Vollkorn" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<title></title>
+	<script type="text/javascript">
+		function hightlight(id) {
+			var a=document.getElementsByClassName("sau") // lấy tất cả các thẻ có class là after trẻ về là một aray 
+			for (i=0;i<a.length;i++)
+				a[i].setAttribute("class","truoc");
+			id.setAttribute("class","sau");
+		}
+		function check() {
+			var s1= document.getElementById("sao1");
+			var dangnhap = document.f.t1;
+			var s2= document.getElementById("sao2");
+			var mk = document.f.t2;
+			
+			var mau = /^[a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/;
+			
+			if (dangnhap.value.length == 0) {
+				s1.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập email");
+
+			} else 
+			if (mau.test(dangnhap.value)==false) {
+				s1.style.opacity = 1;
+				
+				window.alert("Email không hợp lệ!");
+			} else s1.style.opacity = 0;
+
+
+			if (mk.value.length == 0) {
+				s2.style.opacity = 1;
+				
+				window.alert("Bạn chưa nhập mật khẩu");
+
+			} else
+			if (mk.value.length < 6) {
+				s2.style.opacity = 1;
+				
+				window.alert("Mật khẩu không hợp lệ");
+
+			} else s2.style.opacity = 0;
+		}
+		var bien;
+		function backtotop(){
+			var y = window.pageYOffset; // lay toa do thanh cuon doc hien hanh
+			y = y -100;
+			if (y<=0) {
+				window.clearInterval(bien);
+			}
+			window.scrollTo(0, y);
+		}
+		function hengio() {
+			bien = window.setInterval(backtotop, 10);
+		}
+	</script>
+</head>
+<body>
+	<div class="top">
+		<div class="logo"><a href="luyentap.html"><img src="logo1.jpg"></div></a>
+		<div class="search"><input type="text" placeholder="Search for ....">
+		<i class="fas fa-search"></i>
+		</div>
+		<div class="button">
+			<a href="dangky.html"><input type="button" value="Đăng kí"></a>
+			<input type="button" value="Đăng nhập" style="margin-left: 5px;">
+			<input type="button" value="         Đăng nhập bằng FaceBook" style="margin-left: 20px; background-color: #2e5cb8" class="fb">
+			
+		</div>
+	</div>
+	<div class="menu"> 
+		<ul>
+			<a href="luyentap.html" style="color: white ;"><li style="width: 100px; ">PHIM MỚI</li></a>
+			<li style="width: 100px; ">THỂ LOẠI
+				<div class="theloai">
+					<table>
+						<tr>
+							<td>Phim hành động</td>
+							<td>Phim viễn tưởng</td>
+							<td>Phim chiến tranh</td>
+							<td>Phim hình sự</td>
+							<td>Phim phiêu lưu</td>
+						</tr>
+						<tr>
+							<td>Phim hài hước</td>
+							<td>Phim võ thuật</td>
+							<td>Phim kinh dị</td>
+							<td>Phim hồi hợp - gây cấn</td>
+							<td>Phim bí ẩn - siêu nhiên</td>
+						</tr>
+						<tr>
+							<td>Phim cổ trang</td>
+							<td>Phim thần thoại</td>
+							<td>Phim tâm lí</td>
+							<td>Phim tài liệu</td>
+							<td>Phim tình cảm</td>
+						</tr>
+						<tr>
+							<td>Phim chính kịch</td>
+							<td>Phim thể thao</td>
+							<td>Phim gia đình</td>
+							<td ><a href="phimhoathinh.html" style="color: white ; text-decoration: none;">Phim hoạt hình</a> </td>
+							
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li style="width: 100px; ">QUỐC GIA
+				<div class="quocgia">
+					<table>
+						<tr>
+							<td>Việt Nam</td>
+							<td>Trung Quốc</td>
+							<td>Mĩ</td>
+							<td>Hàn Quốc</td>
+							
+						</tr>
+						<tr>
+							<td>Nhật Bản</td>
+							<td>Hồng Kong</td>
+							<td>Ấn Độ</td>
+							<td>Thái Lan</td>							
+						</tr>
+						<tr>
+							<td>Pháp</td>
+							<td>Đài Loan</td>
+							<td>Úc</td>
+							<td>Anh</td>
+							
+						</tr>
+						<tr>
+							<td>Canada</td>							
+							<td>Quốc gia khác</td>
+
+						</tr>
+
+					</table>
+				</div>
+			</li>
+			<li style="width: 100px; ">PHIM LẺ
+				<div class="phimle">
+					<table>
+					<tr>
+						<td>Phim lẻ 2018</td>
+						<td>Phim lẻ 2017</td>
+						<td>Phim lẻ 2016</td>
+						<td>Phim lẻ 2015</td>
+					</tr>
+					<tr>
+							<td>Phim lẻ 2014</td>
+							<td>Phim lẻ 2013</td>
+							<td>Phim lẻ 2012</td>
+							<td>Phim lẻ trước 2012</td>
+					</tr>
+					</table>		
+				</div>
+			</li>
+			<li style="width: 100px; ">PHIM BỘ
+				<div class="phimbo">
+					<table>
+						<tr>
+							<td>Phim bộ Hàn Quốc</td>
+							<td>Phim bộ Trung Quốc</td>
+							<td>Phim bộ Thái Lan</td>
+						</tr>
+						<tr>
+							<td>Phim bộ Hồng Kong</td>
+							<td>Phim bộ Đài Loan</td>
+							<td>Phim bộ Mỹ</td>
+						</tr>
+					</table>
+				</div>
+			</li>
+			<li style="width: 180px; ">PHIM THUYẾT MINH</li>
+			<li style="width: 170px; ">PHIM CHIẾU RẠP</li>
+			<li style="width: 100px; ">TRAILER</li>
+			<li style="width: 150px; ">TOP IMDB 2017</li>
+		</ul>
+	</div>
+	<div class="body" style="height: 1200px;">
+		<div class="hello">Chào mừng các bạn đến với Vans Film. Chúc các bạn có những giay phút xem phim thật thoải mái và thú vị</div>
+		<div class="twd"></div>
+		<div class="tieude"><span>PHIM MỚI</span> / ĐĂNG NHẬP</div>
+		<div class="khungdangky" style="height: 520px;">
+			<form name="f">
+				<div><i class="fas fa-user"></i> Tài khoản<span id="sao1">*</span></div><input type="text" name="t1" onclick="hightlight(this)"  class="truoc" style="width: 200px; font-size: 15px;" placeholder="Nhập email">  <input type="button" value="      Đăng nhập bằng FaceBook" style="margin-left: 20px; background-color: #2e5cb8; width: 250px; font-size: 15px;" class="fb" ><br>
+				<div><i class="fas fa-unlock-alt"></i>  Mật khẩu<span id="sao2">*</span><span id="sao1">*</span></div><input type="password" name="t2" onclick="hightlight(this)" class="truoc" style="width: 200px; font-size: 15px;" placeholder="Nhập mật khẩu truy cập"> <input type="checkbox" name="" checked="checked" style="height: 15px; width: 30px;">Ghi nhớ<br>
+				<div></div><input type="button" name="" value="Đăng nhập" style="width: 120px; background-color: #800000; text-align: center; padding-left: 0px; " class="summit" onclick="check()"> <input type="button" name="" value="Quên mật khẩu" style="width: 150px; margin-left: 0px; padding-left: 5px;  ;" class="quenmk"> 
+			</form>
+
+
+		</div>
+		<div class="star">
+			<div class="trailerphimoi"><i class="fab fa-hotjar" style="font-size: 40px; color: #800000"></i> TRAILER PHIM MỚI</div>
+			<iframe  height="500px" width="100%;" frameborder="0	" src="trailer.html"> </iframe>
+		</div>
+		<div class="end">
+			<div class="logoend"><img src="logo1.jpg" onclick="hengio()"></div>
+			<div class="tableend"><table>
+				<tr class="kindfilm">
+					<td>Phim Mới</td>
+					<td>Phim Lẻ</td>
+					<td>Phim Bộ</td>
+				</tr>
+				<tr>
+					<td>Phim lẻ mới</td>
+					<td>Phim hành động</td>
+					<td>Phim bộ Hàn Quốc</td>
+
+				</tr>
+				<tr>
+					<td>Phim bộ mới</td>
+					<td>Phim kiếm hiệp</td>
+					<td>Phim bộ Trung Quốc</td>
+
+				</tr>
+				<tr>
+					<td>Phim chiếu rạp</td>
+					<td>Phim kinh dị</td>
+					<td>Phim bộ Mỹ</td>
+				</tr>
+				<tr>
+					<td>Phim kinh điển</td>
+					<td>Phim viễn tưởng</td>
+					<td>Phim bộ Việt Nam</td>
+				</tr>
+			</table></div>
+			<div class="quangcao">
+				<div style="font-weight: bold; font-size: 25px;">Liên hệ quảng cáo </div>
+				<div style="font-style: italic;">Email: nguyenlamvan1999@gmail.com</div>
+				<div><i class="fab fa-facebook"></i></div>
+				<div><i class="fab fa-instagram"></i></div>
+				<div><i class="fab fa-twitter-square"></i></div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
